@@ -1,0 +1,11 @@
+{
+    "name": "LandScope NFT #1",
+    "description": "Detected land parcel from satellite imagery.",
+    "image": "https://your-image-url.jpg",
+    "attributes": [
+      { "trait_type": "Location", "value": "Simulated Location" },
+      { "trait_type": "Area", "value": "Simulated Area" },
+      { "trait_type": "Owner", "value": "Simulated Owner" }
+    ]
+  }
+  

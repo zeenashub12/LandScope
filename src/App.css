@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #2e2e2e;
+  line-height: 1.6;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
+/* App Wrapper */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #4a90e2, #2c3e50);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  flex: 0 1 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero .tagline {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.hero .mission {
+  font-size: 1.1rem;
+  margin-bottom: 1.8rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scroll-btn {
+  font-size: 1.1rem;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.scroll-btn:hover {
+  background-color: #4a90e2;
+}
+
+.scroll-btn:active {
+  transform: scale(0.97);
+}
+
+/* Main Content */
+.app-container {
+  padding: 2.5rem 1rem;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.wallet-section {
+  margin-bottom: 2rem;
+}
+
+.connect-btn {
+  background-color: #4a90e2;
   color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.connect-btn:hover {
+  background-color: #2c3e50;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.connect-btn:active {
+  transform: scale(0.97);
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 2rem;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.card p {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.file-input {
+  margin-bottom: 1.5rem;
+}
+
+.preview-section {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.preview-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.land-info {
+  margin-top: 2rem;
+}
+
+.land-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.land-info li {
+  font-size: 1rem;
+  margin: 0.6rem 0;
+  color: #555;
+}
+
+/* Mint Button */
+.mint-button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mint-button:hover {
+  background-color: #4a90e2;
+}
+
+.mint-button:active {
+  transform: scale(0.97);
+}
+
+/* Footer */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: auto;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 1rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #4a90e2;
 }
